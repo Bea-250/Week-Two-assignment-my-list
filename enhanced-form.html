@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahatma Gandhi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        header, section, footer {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #bbb;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 3px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: auto;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background: #555;
+        }
+        video, audio {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mahatma Gandhi</h1>
+    <p>Mahatma Gandhi was an indian lawyer, anti-colonial nationalist and political ethicist.</p>
+</header>
+
+<section>
+    <h2>About</h2>
+    <ul>
+        <li>Born in 1869</li>
+        <li>Died in 1948</li>
+        <li>Fought for civil rights</li>
+        <li>Had a political party</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Other legends</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Death</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jomo Kenyatta</td>
+                <td>Kenya</td>
+                <td>1978</td>
+            </tr>
+            <tr>
+                <td>Nelson Mandela</td>
+                <td>South Africa</td>
+                <td>2013</td>
+            </tr>
+            <tr>
+                <td>Kwame Nkrumah</td>
+                <td>Ghana</td>
+                <td>1972</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Martin Luther King Jr.</h2>
+    <p>I have a dream</p>
+    <video controls>
+        <source src="I Have a Dream speech by Martin Luther King .Jr HD (subtitled).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br><br>
+    <audio controls>
+        <source src="I Have a Dream speech by Martin Luther King .Jr HD (subtitled) - RARE FACTS.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</section>
+
+<section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+254 700 000000" pattern="^\+?\d{10,15}$" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="5">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="********" required minlength="8">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select...</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="course">Preferred Course:</label>
+            <input list="courses" id="course" name="course" placeholder="Type or choose">
+            <datalist id="courses">
+                <option value="Web Development">
+                <option value="Graphic Design">
+                <option value="Data Analytics">
+            </datalist>
+
+            <label>
+                <input type="checkbox" name="newsletter" value="yes">
+                Subscribe to newsletter
+            </label>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Any additional details..."></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 HTML5 Demo Page. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
